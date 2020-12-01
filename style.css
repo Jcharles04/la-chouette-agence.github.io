@@ -1,10 +1,25 @@
+
 body {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
     margin: 0;
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+h2 {
+    width: 90%;
+    margin: 3rem 5%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.column p {
+    margin: 30px 0 0 0;
 }
 
 a,
@@ -79,7 +94,7 @@ a:hover {
 .bg-t-edge {
     background: top no-repeat;
 }
-
+/*
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -89,7 +104,7 @@ a:hover {
     left: 0;
     right: 0;
 }
-
+*/
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
@@ -516,7 +531,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 0.7;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -532,8 +547,9 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
+    display: flex;
     text-align: center;
+    justify-content: center;
 }
 
 a[data-lightbox]:hover::before {
@@ -677,7 +693,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -701,7 +717,9 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: 1rem auto auto auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 h2 {
@@ -775,7 +793,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
